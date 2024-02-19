@@ -71,12 +71,16 @@ function isPrime(n) {
     return false; 
   }
   
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false; 
+   if (n <= 1)
+    return false;
+  else{
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+      if (n % i === 0) {
+        return false;
+      }
     }
+    return true;
   }
-  return true;
 }
 
 module.exports = {
