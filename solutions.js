@@ -69,7 +69,7 @@ function countVowels(str) {
 function isPrime(n) {
   
   
-  if (n <= 1 ||typeof num !== 'number' )
+  if (n <= 1 )
     return false;
   else{
     for (let i = 2; i <= Math.sqrt(n); i++) {
