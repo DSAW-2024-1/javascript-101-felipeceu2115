@@ -67,11 +67,9 @@ function countVowels(str) {
 
 // Check if a Number is Prime
 function isPrime(n) {
-  if (typeof num !== 'number' || num <= 1 || !Number.isInteger(num)) {
-    return false; 
-  }
   
-   if (n <= 1)
+  
+  if (n <= 1 ||typeof num !== 'number' )
     return false;
   else{
     for (let i = 2; i <= Math.sqrt(n); i++) {
